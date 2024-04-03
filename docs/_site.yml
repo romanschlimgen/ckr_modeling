@@ -1,9 +1,12 @@
 name: "ckrmodeling header"
+title: ""
 output_dir: "docs"
 theme: styles.css
 navbar:
-  title: "Chemokine Modeling Database"
-  search: true
+  logo: 
+    image: chemokinedb.png
+    href: index.html
+  search: false
   right:
     - text: "Home"
       href: index.html

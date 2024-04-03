@@ -10,10 +10,17 @@ html {
 /* These properties only apply to Distill sites and blogs  */
 
 .distill-site-header {
-  --title-size:       20px;    
+  --title-size:       22px;    
   --text-color:       #FFF; /* edited */
   --font-weight:      200;
-  --text-size:        20px;
+  --text-size:        22px;
   --hover-color:      #000; /* edited */
   --bkgd-color:       #2C2929; /* edited */
+  --margin-bottom:    1px
+}
+
+.distill-site-header .logo img {
+   max-height: 45px;
+   width: auto;
+   margin-top: 2.5px;
 }
