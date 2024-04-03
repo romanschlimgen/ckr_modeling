@@ -1,0 +1,33 @@
+name: "ckrmodeling header"
+output_dir: "docs"
+navbar:
+  left:
+    - text: "home"
+      href: index.html
+      
+    - text: "models"
+      # href: network.html
+      menu:
+      - text: "coming soon"
+        href: replace.html
+      - text: "coming soon"
+        href: replace.html
+        
+    - text: "pharmacology"
+      menu:
+      - text: "coming soon"
+        href: replace.html
+      - text: "coming soon"
+        href: replace.html
+        
+    - text: "contact us"
+      menu:
+      - text: "coming soon"
+        href: replace.html
+      - text: "coming soon"
+        href: replace.html
+        
+    
+output:
+  html_document:
+    theme: cosmo
