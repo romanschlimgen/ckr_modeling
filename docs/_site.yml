@@ -1,7 +1,9 @@
 name: "ckrmodeling header"
 output_dir: "docs"
+theme: styles.css
 navbar:
   title: "Chemokine Modeling Database"
+  search: true
   right:
     - text: "Home"
       href: index.html
@@ -9,8 +11,8 @@ navbar:
     - text: "Models"
       # href: network.html
       menu:
-      - text: "coming soon"
-        href: replace.html
+      - text: "models"
+        href: models.html
       - text: "coming soon"
         href: replace.html
         
@@ -28,7 +30,5 @@ navbar:
       - text: "coming soon"
         href: replace.html
         
-    
-output:
-  html_document:
-    theme: cosmo
+base_url: https://romanschlimgen.github.io/docs       
+  

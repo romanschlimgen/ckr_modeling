@@ -1,0 +1,19 @@
+html {
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    "Myriad Pro", sans-serif;
+  --mono-font:       "Myriad Pro", sans-serif;
+  --body-font:       "Myriad Pro", sans-serif;
+  --navbar-font:     "Myriad Pro", sans-serif;
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       20px;    
+  --text-color:       #FFF; /* edited */
+  --font-weight:      200;
+  --text-size:        20px;
+  --hover-color:      #000; /* edited */
+  --bkgd-color:       #2C2929; /* edited */
+}
