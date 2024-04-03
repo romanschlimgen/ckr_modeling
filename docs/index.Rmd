@@ -1,6 +1,9 @@
 ---
 title: "ckrmodeling"
+author: Roman Schlimgen
 output: html_document
+email: romanschlimgen@gmail.com
+github_repo: https://romanschlimgen.github.io/ckrmodeling/
 date: "2024-04-03"
 ---
 
