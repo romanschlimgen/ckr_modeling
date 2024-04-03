@@ -32,7 +32,8 @@ server = function(input, output) {
       setSpin(TRUE)
   })
 }
-shinyApp(ui, server)
+shinyApp(ui, server, options = list(height = 400))
+
 ```
 
 
