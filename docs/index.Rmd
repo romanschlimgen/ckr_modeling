@@ -5,7 +5,6 @@ output: html_document
 email: romanschlimgen@gmail.com
 github_repo: https://romanschlimgen.github.io/ckrmodeling/
 date: "2024-04-03"
-runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -32,7 +31,7 @@ server = function(input, output) {
       setSpin(TRUE)
   })
 }
-shinyApp(ui, server, options = list(height = 400, width = 400))
+shinyApp(ui = ui, server = server, options = list(height = 400, width = 400))
 
 ```
 
