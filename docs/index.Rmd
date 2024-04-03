@@ -11,37 +11,46 @@ date: "2024-04-03"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+<style>
+  .iframe-container {
+    border: none;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
 ## CXCR4 - CXCL12
 
 Interactive model shown below
 
 ```{r test, echo=FALSE}
-library(shiny)
 library(NGLVieweR)
+library(htmlwidgets)
 
-ui = fluidPage(NGLVieweROutput("structure"))
-server = function(input, output) {
-  output$structure <- renderNGLVieweR({
-    NGLVieweR("./Structures/CXCR4_CXCL12.pdb") %>%
-      addRepresentation("tube", param = list(sele = ":A", color = "grey")) %>%
-      addRepresentation("cartoon", param = list(sele = ":B", color = "royalblue")) %>%
-      stageParameters(backgroundColor = "white") %>%
-      setQuality("high") %>%
-      setFocus(0) %>%
-      setSpin(TRUE)
-  })
+# Define a function to generate the static content
+generate_static_model <- function() {
+  NGLVieweR("./Structures/CXCR4_CXCL12.pdb") %>%
+    addRepresentation("tube", param = list(sele = ":A", color = "grey")) %>%
+    addRepresentation("cartoon", param = list(sele = ":B", color = "royalblue")) %>%
+    stageParameters(backgroundColor = "white") %>%
+    setQuality("high") %>%
+    setFocus(0) %>%
+    setSpin(TRUE)
 }
-shinyApp(ui = ui, server = server, options = list(height = 400, width = 400))
 
+# Generate static content
+static_content <- generate_static_model()
+
+# Save static content to an HTML file
+htmlwidgets::saveWidget(static_content, file = "static_model.html")
 ```
 
+```{r, echo=FALSE}
+# Include the static content in the document
+html <- readLines("static_model.html")
+htmltools::tags$iframe(srcdoc = paste(html, collapse = "\n"), class = "iframe-container")
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
