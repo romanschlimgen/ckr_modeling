@@ -1,11 +1,12 @@
 name: "ckrmodeling header"
 output_dir: "docs"
 navbar:
-  left:
-    - text: "home"
+  title: "Chemokine Modeling Database"
+  right:
+    - text: "Home"
       href: index.html
       
-    - text: "models"
+    - text: "Models"
       # href: network.html
       menu:
       - text: "coming soon"
@@ -13,14 +14,14 @@ navbar:
       - text: "coming soon"
         href: replace.html
         
-    - text: "pharmacology"
+    - text: "Pharmacology"
       menu:
       - text: "coming soon"
         href: replace.html
       - text: "coming soon"
         href: replace.html
         
-    - text: "contact us"
+    - text: "Contact Us"
       menu:
       - text: "coming soon"
         href: replace.html
