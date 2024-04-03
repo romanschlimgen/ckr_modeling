@@ -1,5 +1,5 @@
 ---
-title: "ckrmodeling"
+title: "CKR Modeling"
 author: Roman Schlimgen
 output: html_document
 email: romanschlimgen@gmail.com
@@ -11,15 +11,29 @@ date: "2024-04-03"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## CXCR4 - CXCL12
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Interactive model shown below
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r test, echo=FALSE}
+library(shiny)
+library(NGLVieweR)
 
-```{r cars}
-summary(cars)
+ui = fluidPage(NGLVieweROutput("structure"))
+server = function(input, output) {
+  output$structure <- renderNGLVieweR({
+    NGLVieweR("./Structures/CXCR4_CXCL12.pdb") %>%
+      addRepresentation("tube", param = list(sele = ":A", color = "grey")) %>%
+      addRepresentation("cartoon", param = list(sele = ":B", color = "royalblue")) %>%
+      stageParameters(backgroundColor = "white") %>%
+      setQuality("high") %>%
+      setFocus(0) %>%
+      setSpin(TRUE)
+  })
+}
+shinyApp(ui, server)
 ```
+
 
 ## Including Plots
 
