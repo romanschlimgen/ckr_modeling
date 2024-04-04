@@ -1,5 +1,5 @@
 ---
-title: "CKR Modeling"
+title: ""
 #author: Roman Schlimgen
 #email: romanschlimgen@gmail.com
 #github_repo: https://romanschlimgen.github.io/ckrmodeling/
@@ -17,43 +17,10 @@ listing: posts
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{=html}
-<style>
-  .iframe-container {
-    border: none;
-    width: 500px;
-    height: 500px;
-  }
-</style>
-```
-#
-## CXCR4 - CXCL12
-
-Interactive model shown below
-
-```{r pdb_load, echo=FALSE}
-library(NGLVieweR)
-library(htmlwidgets)
-
-# Define a function to generate the static content
-generate_static_model <- function() {
-   NGLVieweR("./Structures/CXCR4_CXCL12.pdb", width = "400px", height = "400px") %>%
-    addRepresentation("tube", param = list(sele = ":A", color = "grey")) %>%
-    addRepresentation("cartoon", param = list(sele = ":B", color = "royalblue")) %>%
-    stageParameters(backgroundColor = "white") %>%
-    setQuality("high") %>%
-    setSpin(TRUE)
-}
-# Generate static content
-static_content <- generate_static_model()
-
-# Save static content to an HTML file
-htmlwidgets::saveWidget(static_content, file = "static_model.html")
+```{r   echo=FALSE, layout='l-body', out.width='100%'}
+knitr::include_graphics('header.png')
 ```
 
-```{r, echo=FALSE}
-# Include the static content in the document
-html <- readLines("static_model.html")
-htmltools::tags$iframe(srcdoc = paste(html, collapse = "\n"), class = "iframe-container")
+## Check out the paper!
 
-```
+Validation and Discovery of Chemokine – Chemokine Receptor Pairs with High-Throughput Protein Modeling
