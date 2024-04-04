@@ -10,7 +10,7 @@ html {
 /* These properties only apply to Distill sites and blogs  */
 
 .distill-site-header {
-  --title-size:       22px;    
+  --title-size:       35px;    
   --text-color:       #FFF; /* edited */
   --font-weight:      200;
   --text-size:        22px;
@@ -22,5 +22,5 @@ html {
 .distill-site-header .logo img {
    max-height: 45px;
    width: auto;
-   margin-top: 2.5px;
+   margin-top: 5px;
 }
