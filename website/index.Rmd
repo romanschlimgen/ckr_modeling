@@ -17,10 +17,11 @@ listing: posts
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r   echo=FALSE, layout='l-body', out.width='100%'}
+<center>
+```{r   echo=FALSE, layout='l-body', out.width='80%'}
 knitr::include_graphics('header.png')
 ```
-
+</center>
 ## Check out the paper!
 
 ### Validation and Discovery of Chemokine – Chemokine Receptor Pairs with High-Throughput Protein Modeling

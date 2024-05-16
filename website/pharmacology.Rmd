@@ -19,31 +19,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 #
-## CXCR4 - CXCL12 Binding Data
+## CXCR4 Binding Data
 
-```{r pdb_load, echo=FALSE}
-library(NGLVieweR)
-library(htmlwidgets)
 
-# Define a function to generate the static content
-generate_static_model <- function() {
-   NGLVieweR("./Structures/CXCR4_CXCL12.pdb", width = "400px", height = "400px") %>%
-    addRepresentation("tube", param = list(sele = ":A", color = "grey")) %>%
-    addRepresentation("cartoon", param = list(sele = ":B", color = "royalblue")) %>%
-    stageParameters(backgroundColor = "white") %>%
-    setQuality("high") %>%
-    setSpin(TRUE)
-}
-# Generate static content
-static_content <- generate_static_model()
-
-# Save static content to an HTML file
-htmlwidgets::saveWidget(static_content, file = "static_model.html")
-```
-
-```{r, echo=FALSE}
-# Include the static content in the document
-html <- readLines("static_model.html")
-htmltools::tags$iframe(srcdoc = paste(html, collapse = "\n"), class = "iframe-container")
-
+```{r figurename, echo=FALSE, out.width = '50%'}
+knitr::include_graphics("./Binding/CXCR4.png")
 ```
