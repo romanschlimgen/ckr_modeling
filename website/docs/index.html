@@ -1940,6 +1940,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
      width: auto;
      margin-top: 5px;
   }
+
+  d-article {
+  grid-template-columns: [screen-start] 1fr [text-start kicker-end] 2% 2% 2% 2% 2% 2% 2% 2% [text-end gutter-start] 2% [middle-end] 2% [page-end gutter-end] 1fr [screen-end];
+  grid-column-gap: 9%;
+  }
   </style>
   <style type="text/css">
   /* base style */
@@ -2096,7 +2101,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2140,7 +2145,7 @@ Models
 </button>
 <div class="nav-dropdown-content">
 <a href="models.html">models</a>
-<a href="replace.html">coming soon</a>
+<a href="chord.html">chord</a>
 </div>
 </div>
 <div class="nav-dropdown">

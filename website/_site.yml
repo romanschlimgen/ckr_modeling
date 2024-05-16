@@ -21,8 +21,8 @@ navbar:
         
     - text: "Pharmacology"
       menu:
-      - text: "coming soon"
-        href: replace.html
+      - text: "binding data"
+        href: pharmacology.html
       - text: "coming soon"
         href: replace.html
         

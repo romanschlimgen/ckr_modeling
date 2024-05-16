@@ -1,0 +1,49 @@
+---
+title: "Pharmacology"
+description: |
+  Binding Data for the Paper
+date: 2024-05-16
+output:
+  distill::distill_article:
+    self_contained: false
+    anchor_sections: FALSE
+site: distill::distill_website
+css: [styles.css]
+listing: posts
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+#
+## CXCR4 - CXCL12 Binding Data
+
+```{r pdb_load, echo=FALSE}
+library(NGLVieweR)
+library(htmlwidgets)
+
+# Define a function to generate the static content
+generate_static_model <- function() {
+   NGLVieweR("./Structures/CXCR4_CXCL12.pdb", width = "400px", height = "400px") %>%
+    addRepresentation("tube", param = list(sele = ":A", color = "grey")) %>%
+    addRepresentation("cartoon", param = list(sele = ":B", color = "royalblue")) %>%
+    stageParameters(backgroundColor = "white") %>%
+    setQuality("high") %>%
+    setSpin(TRUE)
+}
+# Generate static content
+static_content <- generate_static_model()
+
+# Save static content to an HTML file
+htmlwidgets::saveWidget(static_content, file = "static_model.html")
+```
+
+```{r, echo=FALSE}
+# Include the static content in the document
+html <- readLines("static_model.html")
+htmltools::tags$iframe(srcdoc = paste(html, collapse = "\n"), class = "iframe-container")
+
+```
