@@ -88,26 +88,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title></title>
+  <title>: Chord</title>
+
+  <meta property="description" itemprop="description" content="Interaction Chord Plot of CK and CKR"/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2024-04-05"/>
+  <meta property="article:created" itemprop="dateCreated" content="2024-04-05"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content=""/>
+  <meta property="og:title" content=": Chord"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Interaction Chord Plot of CK and CKR"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content=""/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content=""/>
+  <meta property="twitter:title" content=": Chord"/>
+  <meta property="twitter:description" content="Interaction Chord Plot of CK and CKR"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output","site","css","listing"]}},"value":[{"type":"character","attributes":{},"value":[""]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","anchor_sections"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["styles.css"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output","site","css","listing"]}},"value":[{"type":"character","attributes":{},"value":["Chord"]},{"type":"character","attributes":{},"value":["Interaction Chord Plot of CK and CKR\n"]},{"type":"character","attributes":{},"value":["2024-04-05"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","anchor_sections"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["styles.css"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1940,6 +1946,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
      width: auto;
      margin-top: 5px;
   }
+
+  d-article {
+  grid-template-columns: [screen-start] 1fr [text-start kicker-end] 2% 2% 2% 2% 2% 2% 2% 2% [text-end gutter-start] 2% [middle-end] 2% [page-end gutter-end] 1fr [screen-end];
+  grid-column-gap: 9%;
+  }
   </style>
   <style type="text/css">
   /* base style */
@@ -2096,7 +2107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2117,7 +2128,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"","authors":[]}
+{"title":"Chord","description":"Interaction Chord Plot of CK and CKR","authors":[],"publishedDate":"2024-04-05T00:00:00.000-05:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2140,7 +2151,7 @@ Models
 </button>
 <div class="nav-dropdown-content">
 <a href="models.html">models</a>
-<a href="replace.html">coming soon</a>
+<a href="chord.html">coming soon</a>
 </div>
 </div>
 <div class="nav-dropdown">
@@ -2307,7 +2318,7 @@ function init_posts_list() {
 
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
-<h1 class="posts-list-caption" data-caption=""></h1>
+<h1 class="posts-list-caption" data-caption="Chord">Chord</h1>
 </div>
 <div class="posts-more">
 <a href="#">More articles &raquo;</a>
@@ -2316,21 +2327,24 @@ function init_posts_list() {
 <!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>index.knit</h1>
+<h1>Chord</h1>
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Interaction Chord Plot of CK and CKR</p></p>
 </div>
 
 
 <div class="d-article">
+<h1 id="section"></h1>
+<h2 id="chord-plot">Chord Plot</h2>
+<p>Intermolecular Interactions (3 Angstrom Limit)<br />
+Light Blue = CXCL12<br />
+Dark Blue = ACKR3<br />
+</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="header.png" width="100%" /></p>
+<p><img src="chord_files/figure-html5/chord-1.png" width="624" /></p>
 </div>
-<h2 id="check-out-the-paper">Check out the paper!</h2>
-<h3 id="validation-and-discovery-of-chemokine-chemokine-receptor-pairs-with-high-throughput-protein-modeling">Validation and Discovery of Chemokine – Chemokine Receptor Pairs with High-Throughput Protein Modeling</h3>
-<p>Roman R. Schlimgen, Yushin Kim, Michael T. Zimmerman, Davin R. Jensen, Francis C. Peterson, Martyna Szpakowska, Andy Chevigné, Brian F. Volkman</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

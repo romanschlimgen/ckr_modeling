@@ -23,4 +23,6 @@ knitr::include_graphics('header.png')
 
 ## Check out the paper!
 
-Validation and Discovery of Chemokine – Chemokine Receptor Pairs with High-Throughput Protein Modeling
+### Validation and Discovery of Chemokine – Chemokine Receptor Pairs with High-Throughput Protein Modeling
+
+Roman R. Schlimgen, Yushin Kim, Michael T. Zimmerman, Davin R. Jensen, Francis C. Peterson, Martyna Szpakowska, Andy Chevigné, Brian F. Volkman

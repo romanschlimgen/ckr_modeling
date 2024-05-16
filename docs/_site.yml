@@ -16,8 +16,8 @@ navbar:
       menu:
       - text: "models"
         href: models.html
-      - text: "coming soon"
-        href: replace.html
+      - text: "chord"
+        href: chord.html
         
     - text: "Pharmacology"
       menu:

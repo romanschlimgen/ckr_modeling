@@ -14,7 +14,7 @@ html {
   --text-color:       #FFF; /* edited */
   --font-weight:      200;
   --text-size:        22px;
-  --hover-color:      #000; /* edited */
+  --hover-color:      #0066CC; /* edited */
   --bkgd-color:       #2C2929; /* edited */
   --margin-bottom:    1px
 }
@@ -24,3 +24,9 @@ html {
    width: auto;
    margin-top: 5px;
 }
+
+d-article {
+grid-template-columns: [screen-start] 1fr [text-start kicker-end] 2% 2% 2% 2% 2% 2% 2% 2% [text-end gutter-start] 2% [middle-end] 2% [page-end gutter-end] 1fr [screen-end];
+grid-column-gap: 9%;
+}
+
